@@ -1,4 +1,5 @@
 import java.math.BigInteger
+import java.util.Scanner
 
 fun main(){
     //How to convert a numeric value to another type
@@ -42,5 +43,34 @@ fun main(){
     h=0b10
 
     //Store multiple values in an array
+
+    var myFirstArray= arrayOf(1,2,3)
+    println(myFirstArray.size)
+    myFirstArray.set(0,5)
+    println(myFirstArray[0])
+    var k=9
+    //particularly important
+    println("y:${if (k>10) x else y}")
+
+    val scanner = Scanner(System.`in`)
+    k=scanner.nextInt()
+
+    //
+
+    var array1= arrayOf("Serhat","Ali","Volkan")
+    var array2: Array<Int> = arrayOf(1,2,3)
+    var array3:Array<Boolean> = arrayOf(true,false,true)
+
+
+
+    for(i in 1..3 ){
+        var random1:Int=(Math.random()*3).toInt()
+        println("Name:${array1[random1]} Number:${array2[random1]} State:${array3[random1]}")
+    }
+
+
+
+
+
 
 }
